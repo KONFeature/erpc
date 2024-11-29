@@ -11,6 +11,12 @@ export type {
   PolicyEvalUpstreamMetrics,
   PolicyEvalUpstream,
   SelectionPolicyEvalFunction,
+  // Rpc methods related
+  MatcherRpcMethodOrString,
+  MatcherRpcMethod,
+  RpcMethodSplitted,
+  EnvioRpcSchema,
+  PimlicoRpcSchema,
 } from "./types";
 export {
   // Data finality const exports

@@ -23,7 +23,14 @@ importers:
         version: 5.1.6
 
   typescript/config:
+    dependencies:
+      viem:
+        specifier: ^2.21.50
+        version: 2.21.53(typescript@5.1.6)
     devDependencies:
+      permissionless:
+        specifier: ^0.2.20
+        version: 0.2.20(viem@2.21.53(typescript@5.1.6))
       tsup:
         specifier: ^8.3.5
         version: 8.3.5(typescript@5.1.6)
@@ -557,6 +564,11 @@ packages:
   path-scurry@1.11.1:
     resolution: {integrity: sha512-Xa4Nw17FS9ApQFJ9umLiJS4orGjm7ZzwUrwamcGQuHSzDyth9boKDaycYdDcZDuqYATXw4HFXgaqWTctW/v1HA==}
     engines: {node: '>=16 || 14 >=14.18'}
+
+  permissionless@0.2.20:
+    resolution: {integrity: sha512-41BDkEVgfNIa1xpQ+U0ca44JH602EvaGIPTI2cEnSjo0OGaJONJ+vd4DX+TIG4RaXLObD0/UWPXrQrKkj7oseg==}
+    peerDependencies:
+      viem: ^2.21.22
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
@@ -1119,6 +1131,10 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
       minipass: 7.1.2
+
+  permissionless@0.2.20(viem@2.21.53(typescript@5.1.6)):
+    dependencies:
+      viem: 2.21.53(typescript@5.1.6)
 
   picocolors@1.1.1: {}
 

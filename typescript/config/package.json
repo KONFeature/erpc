@@ -26,6 +26,7 @@
   "author": "erpc",
   "license": "Apache-2.0",
   "devDependencies": {
+    "permissionless": "^0.2.20",
     "tsup": "^8.3.5",
     "viem": "^2.21.53"
   }

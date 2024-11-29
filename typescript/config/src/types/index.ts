@@ -15,3 +15,10 @@ export type {
   SelectionPolicyEvalFunction,
 } from "./policyEval";
 export type { BuilderContext } from "./builder";
+export type {
+  MatcherRpcMethodOrString,
+  MatcherRpcMethod,
+  RpcMethodSplitted,
+  EnvioRpcSchema,
+  PimlicoRpcSchema,
+} from "./methods";

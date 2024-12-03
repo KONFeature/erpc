@@ -94,6 +94,14 @@ export type {
 } from "./generated";
 
 export { initErpcConfig } from "./builder";
+export {
+  buildEnvioUpstream,
+  buildAlchemyUpstream,
+  buildDrpcUpstream,
+  buildBlastApiUpstream,
+  buildPimlicoUpstream,
+  buildEvmUpstream,
+} from "./builder/upstreams";
 
 import type { Config } from "./generated";
 

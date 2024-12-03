@@ -14,11 +14,11 @@ export type {
   PolicyEvalUpstream,
   SelectionPolicyEvalFunction,
 } from "./policyEval";
-export type { BuilderContext } from "./builder";
 export type {
+  BuilderContext,
   MatcherRpcMethodOrString,
   MatcherRpcMethod,
   RpcMethodSplitted,
   EnvioRpcSchema,
   PimlicoRpcSchema,
-} from "./methods";
+} from "./builder";

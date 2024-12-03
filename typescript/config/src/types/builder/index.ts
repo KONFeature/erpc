@@ -16,3 +16,10 @@ export type {
   ConfigAwareObject,
 } from "./core";
 export type { AddProject } from "./project";
+export type {
+  MatcherRpcMethodOrString,
+  MatcherRpcMethod,
+  RpcMethodSplitted,
+  EnvioRpcSchema,
+  PimlicoRpcSchema,
+} from "./methods";

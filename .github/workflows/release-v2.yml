@@ -110,7 +110,6 @@ jobs:
 
   # Run on release PR merge
   release:
-    needs: prepare-release
     if: |
       github.event_name == 'push' && 
       github.ref == 'refs/heads/feat/erpc-cli-npmjs' && 
@@ -132,6 +131,11 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.22.x'
+
+      - name: Configure Git
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
 
       # Create git tag
       - name: Create tag

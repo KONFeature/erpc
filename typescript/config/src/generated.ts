@@ -118,6 +118,9 @@ export interface RedisConnectorConfig {
   db: number /* int */;
   tls?: TLSConfig;
   connPoolSize: number /* int */;
+  initTimeout?: number /* time in nanoseconds (time.Duration) */;
+  getTimeout?: number /* time in nanoseconds (time.Duration) */;
+  setTimeout?: number /* time in nanoseconds (time.Duration) */;
 }
 export interface DynamoDBConnectorConfig {
   table: string;
@@ -128,12 +131,18 @@ export interface DynamoDBConnectorConfig {
   rangeKeyName: string;
   reverseIndexName: string;
   ttlAttributeName: string;
+  initTimeout?: number /* time in nanoseconds (time.Duration) */;
+  getTimeout?: number /* time in nanoseconds (time.Duration) */;
+  setTimeout?: number /* time in nanoseconds (time.Duration) */;
 }
 export interface PostgreSQLConnectorConfig {
   connectionUri: string;
   table: string;
   minConns?: number /* int32 */;
   maxConns?: number /* int32 */;
+  initTimeout?: number /* time in nanoseconds (time.Duration) */;
+  getTimeout?: number /* time in nanoseconds (time.Duration) */;
+  setTimeout?: number /* time in nanoseconds (time.Duration) */;
 }
 export interface AwsAuthConfig {
   mode: 'file' | 'env' | 'secret'; // "file", "env", "secret"
